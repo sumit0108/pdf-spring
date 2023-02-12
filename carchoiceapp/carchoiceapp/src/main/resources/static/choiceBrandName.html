@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+</head>
+
+<body bgColor="lightgreen">
+<form action="getCarByName" method="post">
+	<h2>Choose brand to find available models</h2>
+	<div>
+	<label for="cars">Choose a Brand:</label>
+	<select name="cars" id="cars">
+		<option value="Hundai">Hundai</option>
+		<option value="Tata">Tata</option>
+		<option value="MaruthiSuzuki">Maruthi Suzuki</option>
+		<option value="honda">Honda</option>
+	</select>
+</div>
+<div>
+<input type="submit" value="Find Model"> &ensp;<button><a href="index.html">Back</a></button>
+</div>
+</form>
+
+
+</body>
+</html>
