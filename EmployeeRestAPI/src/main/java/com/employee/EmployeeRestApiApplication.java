@@ -1,20 +1,17 @@
-package com.carchoiceapp;
+package com.employee;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@EnableAutoConfiguration
 @SpringBootApplication
-public class CarChoiceAppApplication {
+public class EmployeeRestApiApplication {
 
 	@Autowired
-	CarRepo carRepo;
+	EmployeeService employeeService;
 	
 	public static void main(String[] args) {
-		SpringApplication.run(CarChoiceAppApplication.class, args);
+		SpringApplication.run(EmployeeRestApiApplication.class, args);
 	}
-	
 
 }
